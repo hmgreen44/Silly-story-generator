@@ -13,6 +13,7 @@ let inserty = "the soup kitchen Disneyland the White House";
 let insertz = "spontaneously combusted melted into a puddle on the sidewalk turned into a slug and crawled away";
 //adding a replacement of the newStory with an X Y and Z item//
 newStory = newStory.replace(':insertx:',xItem);
+newStory = newStory.replace(':insertx:',xItem);
 newStory = newStory.replace(':inserty:',yItem);
 newStory = newStory.replace(':insertz:',zItem);
 
@@ -21,7 +22,7 @@ newStory = newStory.replace(':insertz:',zItem);
 
   function result() {    
     //Allows a newStory to be created//
-    let newStory = storyText;
+    var newStory = storyText;
     //using let to grab a random value from the X array//
   let xItem = randomValueFromArray(insertX)
   let yItem = randomValueFromArray(insertY)
@@ -32,7 +33,7 @@ newStory = newStory.replace(':insertz:',zItem);
   if(customName.value !== '') {
     //const used to assign a value and have a constant reference to that value//
     const name = customName.value;
-    newStory = newStory.replace('Bob',name);
+    newStory = newStory.replace('Bob',customName);
 
   }
 
