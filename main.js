@@ -7,10 +7,10 @@ function randomValueFromArray(array){
   return array[random];
 }// Added variables to fill in the story from a random array //
 
-let storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertx: weighs 300 pounds, and it was a hot day.";
-let insertx = "Willy the Goblin Big Daddy Father Christmas";
-let inserty = "the soup kitchen Disneyland the White House";
-let insertz = "spontaneously combusted melted into a puddle on the sidewalk turned into a slug and crawled away";
+var storyText = "It was 94 fahrenheit outside, so :insertx: went for a walk. When they got to :inserty:, they stared in horror for a few moments, then :insertz:. Bob saw the whole thing, but was not surprised — :insertX: weighs 300 pounds, and it was a hot day.";
+var insertX = "Willy the Goblin, Big Daddy, Father Christmas";
+var insertY = "the soup kitchen, Disneyland, the White House";
+var insertZ = "spontaneously combusted, melted into a puddle on the sidewalk, turned into a slug and crawled away";
 //adding a replacement of the newStory with an X Y and Z item//
 
   randomize.addEventListener('click', result);
@@ -19,9 +19,9 @@ let insertz = "spontaneously combusted melted into a puddle on the sidewalk turn
     //Allows a newStory to be created//
     var newStory = storyText;
     //using let to grab a random value from the X array//
-  let xItem = randomValueFromArray(insertX)
-  let yItem = randomValueFromArray(insertY)
-  let zItem = randomValueFromArray(insertZ)
+  var xItem = randomValueFromArray(insertX)
+  var yItem = randomValueFromArray(insertY)
+  var zItem = randomValueFromArray(insertZ)
 
   newStory = newStory.replace(':insertx:',xItem);
   newStory = newStory.replace(':insertx:',xItem);
