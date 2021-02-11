@@ -12,11 +12,6 @@ let insertx = "Willy the Goblin Big Daddy Father Christmas";
 let inserty = "the soup kitchen Disneyland the White House";
 let insertz = "spontaneously combusted melted into a puddle on the sidewalk turned into a slug and crawled away";
 //adding a replacement of the newStory with an X Y and Z item//
-newStory = newStory.replace(':insertx:',xItem);
-newStory = newStory.replace(':insertx:',xItem);
-newStory = newStory.replace(':inserty:',yItem);
-newStory = newStory.replace(':insertz:',zItem);
-
 
   randomize.addEventListener('click', result);
 
@@ -28,7 +23,11 @@ newStory = newStory.replace(':insertz:',zItem);
   let yItem = randomValueFromArray(insertY)
   let zItem = randomValueFromArray(insertZ)
 
-  
+  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':inserty:',yItem);
+  newStory = newStory.replace(':insertz:',zItem);
+
 
   if(customName.value !== '') {
     //const used to assign a value and have a constant reference to that value//
